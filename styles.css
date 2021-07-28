@@ -1,4 +1,7 @@
 /*Master Styles*/
+* {
+
+}
 body {
     margin: 0px;
 }
@@ -102,3 +105,7 @@ transition: 1s;
     filter: brightness(10%);
 }
 
+.subtitle {
+    display: block;
+    margin: 0 auto;
+}
