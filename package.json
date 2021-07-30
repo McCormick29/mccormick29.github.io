@@ -1,0 +1,24 @@
+{
+  "name": "McCormick29.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McCormick29/mccormick29.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McCormick29/mccormick29.github.io/issues"
+  },
+  "homepage": "https://github.com/McCormick29/mccormick29.github.io#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5"
+  }
+}

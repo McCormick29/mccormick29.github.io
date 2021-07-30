@@ -1,9 +1,12 @@
 /*Master Styles*/
 * {
-
+    font-family: "Trirong", serif;
 }
+
+
 body {
     margin: 0px;
+    
 }
 
 .container {
@@ -20,6 +23,16 @@ body {
 
 .left-side {
     display: flex;
+}
+
+a {
+    text-decoration: inherit;
+    color: transparent;
+}
+
+a:hover {
+    font-weight: 600;
+    color: white;
 }
 
 .nav-wrapper > .left-side > div {
@@ -52,10 +65,12 @@ body {
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
 }
 
 .portfolio-item-wrapper {
     position: relative;
+    padding: 5px;
 }
 
 .portfolio-img-background {
@@ -66,7 +81,7 @@ background-position: center;
 background-repeat: no-repeat;
 }
 
-.img-text-wrapper {
+/* .img-text-wrapper {
     position: absolute;
     top: 0;
     display: flex;
@@ -77,19 +92,24 @@ background-repeat: no-repeat;
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
-}
+} */
 
-.logo-wrapper img {
-width: 50%;
-margin-bottom: 20px;
+.logo-wrapper{
+/* width: 50%; */
+margin-bottom: 0 auto;
 color: white;
 transition: 2s;
 }
 
-.logo-wrapper:hover img {
+/* .logo-wrapper{
     width: 50%;
     margin-bottom: 20px;
+} */
+
+.img-text-wrapper{
+    margin: 0 auto;
 }
+
 .img-text-wrapper .subtitle {
 font-weight: 600;
 color: transparent;
@@ -106,6 +126,38 @@ transition: 1s;
 }
 
 .subtitle {
-    display: block;
-    margin: 0 auto;
+
+    position: absolute;
+    /* margin: 0 auto; */
+    left: 40%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-size: 27px;
+    /* color: transparent */
+    ;}
+    /* padding-left: 100px;
+    padding-right: 100px; */
+
+
+.subtitle:hover {
+    text-decoration: inherit;
+    position: absolute;
+    /* margin: 0 auto; */
+    left: 40%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
 }
+
