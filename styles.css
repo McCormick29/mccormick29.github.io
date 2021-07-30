@@ -162,10 +162,11 @@ transition: 1s;
 }
 
 .emailForm {
+    color: white;
     display: flex;
     display: inline;
     grid-row: 1fr;
-    background-color: gray;
+    background-color: #4d4b4e;
     margin: 10px;
     padding: 10px;
     font-family: "Trirong", serif;;
@@ -177,6 +178,13 @@ transition: 1s;
     padding: 5px;
     background-color: black;
     color: white;
+}
+
+.submitBtn:hover {
+    transition: 1s;
+    color: black;
+    background-color: white;
+    font-weight: bold;
 }
 
 .message {
