@@ -17,8 +17,5 @@
     "url": "https://github.com/McCormick29/mccormick29.github.io/issues"
   },
   "homepage": "https://github.com/McCormick29/mccormick29.github.io#readme",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "cors": "^2.8.5"
-  }
+  "dependencies": {}
 }

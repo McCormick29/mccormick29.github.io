@@ -156,8 +156,29 @@ transition: 1s;
     align-items: center;
     height: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     /* padding-left: 100px;
     padding-right: 100px; */
 }
 
+.emailForm {
+    display: flex;
+    display: inline;
+    grid-row: 1fr;
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+    font-family: "Trirong", serif;;
+}
+
+.submitBtn {
+    margin: 0 auto;
+    width: 100px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.message {
+    box-shadow: honeydew;
+}

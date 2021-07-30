@@ -67,10 +67,10 @@
                 
                     <div class="img-text-wrapper">
                         <div class="subtitle"> 
-                            Agile
+                           <a href="agile.html">Agile</a> 
                         </div>
                     </div>
-                </div>                 
+                </div>     
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(https://images.unsplash.com/photo-1585288766827-c62e98d70191?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80)"></div>
                 
@@ -90,8 +90,11 @@
                             </div>
                         </div>
                     </div>
-                </div>   
-<form method="POST" action=”contact-form”>
+                </div>  
+            </div>
+        </div>
+        <section class="emailForm">
+<form method="POST" action=”contact-form” class="contact-form">
 <label for="name">Name</label><br>
 <input class="name" type=”text” placeholder="name" required><br>
 <label for="">Email</label><br />
@@ -105,11 +108,10 @@ cols="30"
 rows="10"
 placeholder="message"
 required></textarea><br/>
-<button type=”submit”>Submit</button>
+<button class="submitBtn" type=”submit”>Submit</button>
 </form>
-        </div>
-    </div>
-    <script src="index.js"></script>
+</section> 
+        <!-- <script src="index.js"></script> -->
     <script scr="https://smtpjs.com/v3/smtp.js"></script> 
 </body> 
 <script>
@@ -126,5 +128,33 @@ required></textarea><br/>
     })
     
 </script> 
+
+<script>
+    function sendEmail(name, email, message) {
+    Email.send({
+        Host: "smtp.gmail.com",
+        UserName: "levimccormick26@gmail.com",
+        PassWord: "olyidlluctomoupd",
+        To: "levimccormick26@gmail.com",
+        From: "levimccormick26@gmail.com",
+        Subject: `${name} sent you a message`,
+        Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`
+    }).then((message) => alert("mail sent successfully"))
+}
+function submitForm(e) {
+    
+    e.preventDefault();
+    
+    let name = document.querySelector(".name").value;
+    let email = document.querySelector(".email").value;
+    let message = document.querySelector(".message").value;
+    
+    // document.querySelector(".contact-form").reset()
+    
+    sendEmail(name, email, message)
+}
+
+document.querySelector(".contact-form").addEventListener("submit", submitForm)
+</script>
 
 </html>
