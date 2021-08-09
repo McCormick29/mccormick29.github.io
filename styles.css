@@ -165,8 +165,9 @@ transition: 1s;
     color: white;
     display: flex;
     display: inline;
+    
     grid-row: 1fr;
-    background-color: #4d4b4e;
+    background-color: rgb(155, 5, 155);
     margin: 10px;
     padding: 10px;
     font-family: "Trirong", serif;;

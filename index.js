@@ -23,4 +23,5 @@ function submitForm(e) {
     sendEmail(name, email, message)
 }
 
+func
 document.querySelector(".contact-form").addEventListener("submit", submitForm)
