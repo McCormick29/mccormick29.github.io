@@ -60,6 +60,25 @@ a:hover {
     color: black;
 }
 
+.right-side {
+    display: flex;
+    width: 10%;
+    height: 10%;
+}
+
+.brand {
+    background-size: cover;
+    width: 60%;
+    height: 50%;
+    float: right;
+}
+
+.brandImg {
+    background-size: cover;
+    width: 90%;
+    float: right;
+}
+
 /*Portfolio Styles*/
 
 .portfolio-items-wrapper {
