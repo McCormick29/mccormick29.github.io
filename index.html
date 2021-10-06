@@ -93,8 +93,51 @@
                 </div>  
             </div>
         </div>
-        <section class="emailForm">
-<form method="POST" action=”contact-form” class="contact-form">
+        <section class='emailForm'>
+            <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+            action="https://script.google.com/macros/s/AKfycbxBLXCxk-cBtfD_IBJfmY3jb3voordeD4FDF_rV6edII9Vy0evMLvyII0O_WbMBZE0HRQ/exec">
+  
+  
+  
+  
+          <label for="name">Name: </label>
+          <input id="name" name="name" placeholder="What your Mom calls you" />
+  
+          <br>
+  
+  
+          <label for="message">Message: </label>
+          <textarea id="message" name="message" rows="10"
+                    placeholder="Tell us what's on your mind..."></textarea>
+  
+          <br>
+  
+          <label for="email"><em>Your</em> Email Address:</label>
+          <input id="email" name="email" type="email" value=""
+                 required placeholder="your.name@email.com" />
+  
+  
+  
+          <button class="button-success pure-button button-xlarge">
+              <i class="fa fa-paper-plane"></i>&nbsp;Send
+          </button>
+  
+      </form>
+  
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+          <h2>
+              <em>Thanks</em> for contacting us!
+              We will get back to you soon!
+          </h2>
+      </div>
+  
+  
+      <script data-cfasync="false" type="text/javascript"
+              src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+        </section>
+        <!-- <section class="emailForm"> -->
+<!-- <form method="POST" action=”contact-form” class="contact-form">
 <label for="name">Name</label><br>
 <input class="name" type=”text” placeholder="name" required><br>
 <label for="">Email</label><br />
@@ -111,9 +154,9 @@ required></textarea><br/>
 <button class="submitBtn" type=”submit”>Submit</button>
 </form>
 </section> 
-        <!-- <script src="index.js"></script> -->
+        <script src="index.js"></script> -->
     <!-- <script scr="https://smtpjs.com/v3/smtp.js"></script>  -->
-</body> 
+<!-- </body> 
 <script>
     const portfolioITems = document.querySelectorAll('.portfolio-item-wrapper')
     
@@ -127,9 +170,9 @@ required></textarea><br/>
         })
     })
     
-</script> 
+</script>  -->
 
-<script>
+<!-- <script>
     function sendEmail(name, email, message) {
     Email.send({
         Host: "smtp.gmail.com",
@@ -143,9 +186,9 @@ required></textarea><br/>
 }
 function submitForm(e) {
     
-    e.preventDefault();
+    e.preventDefault(); -->
     
-    let name = document.querySelector(".name").value;
+    <!-- let name = document.querySelector(".name").value;
     let email = document.querySelector(".email").value;
     let message = document.querySelector(".message").value;
     
@@ -155,6 +198,6 @@ function submitForm(e) {
 }
 
 document.querySelector(".contact-form").addEventListener("submit", submitForm)
-</script>
+</script> -->
 
 </html>
