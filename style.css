@@ -35,3 +35,68 @@ button {
 #name, #email {
   width: 50%;
 }
+/* Nav styles */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+  white-space: nowrap;
+}
+
+.left-side {
+  display: flex;
+}
+
+a {
+  text-decoration: inherit;
+  color: transparent;
+}
+
+a:hover {
+  font-weight: 600;
+  color:black;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link-wrapper :hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.right-side {
+  display: flex;
+  width: 10%;
+  height: 10%;
+}
+
+.brand {
+  background-size: cover;
+  width: 60%;
+  height: 50%;
+  float: right;
+}
+
+.brandImg {
+  background-size: cover;
+  width: 90%;
+  float: right;
+}
