@@ -49,13 +49,18 @@ button {
 
 a {
   text-decoration: inherit;
-  color: transparent;
+  color: black;
 }
 
-a:hover {
-  font-weight: 600;
-  color:black;
+.aLink {
+  text-decoration: none;
+  color: black !important;
 }
+
+/* a:hover {
+  font-weight: 600;
+  color:white;
+} */
 
 .nav-wrapper > .left-side > div {
   margin-right: 20px;
@@ -91,7 +96,7 @@ a:hover {
 .brand {
   background-size: cover;
   width: 60%;
-  height: 50%;
+  height: 40%;
   float: right;
 }
 
