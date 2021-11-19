@@ -94,6 +94,7 @@ a:hover {
 
 .portfolio-items-wrapper {
     display: grid;
+    /* changed from 1fr 1fr 1fr to 1fr to stack elements */
     grid-template-columns: 1fr 1fr 1fr;
     padding: 5px;
 }
